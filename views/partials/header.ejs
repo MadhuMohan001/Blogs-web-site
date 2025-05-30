@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/header.css">
+<nav>
+    <div class="nav">
+        <img src="/images/Bolgs-Logo.png" alt="Blogs website" class="logo">
+        <ul class="nav-items">
+            <li class="home"><a href="/">Home</a></li>
+            <li class="myposts"><a href="/myposts">MyPosts</a></li>
+            <li class="tredingposts"><a href="/trendposts">TredingPosts</a></li>
+            <li class="about"><a href="/about">About</a></li>
+        </ul>
+        <button class="profile-button">login</button>
+    </div>
+    <script>
+        document.querySelector(".profile-button").addEventListener("click",()=>{
+            window.location.href = "/login";
+        })
+    </script>
+</nav>

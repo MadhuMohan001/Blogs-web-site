@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: auto;
+    width: 98vw;
+    display: flex;
+    margin: 0 auto;
+}
+.nav-items {
+    display: 1px solid black;   
+    display: flex;
+    list-style: none;
+    width: 60vw;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+li:hover{
+    cursor: pointer;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.logo {
+    height: 100%;
+    width: 20vw;
+    border-radius: 25px;
+}
+.profile-button{
+    border:none;
+    border-radius: 20px;
+    height: 5vh;
+    margin: 15px auto;
+    background-color: #ffffff ;
+    color: #ba9696;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.profile-button:hover{
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: #b68f8f;
+    background: linear-gradient(45deg, #8bb3ff, #5a9bff);
+}
+
+/* 1.980--1320 */
+@media (min-width:980px) and (max-width:1320px){
+    .nav{
+        padding: 0.2em 0;
+        font-size: 1em;
+    }
+    .nav-items{
+        font-size: 1em;
+    }
+    .profile-button{
+        font-size: 0.9em;
+    }
+}
+@media (min-width:700px) and (max-width:979px){
+    .nav{
+        padding: 0.2em 0;
+        font-size: 1em;
+    }
+    .nav-items{
+        font-size: 1em;
+    }
+    .logo{
+        padding: auto 0;
+    }
+    .profile-button{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:500px) and (max-width:699px){
+    .nav{
+        padding: 0.1em 0;
+        font-size: 0.9em;
+    }
+    .nav-items{
+        font-size: 0.9em;
+    }
+    .profile-button{
+        font-size: 0.7em;
+    }
+}
+@media (min-width:351px) and (max-width:499px){
+    .nav{
+        padding: 0.2em 0;
+        font-size: 0.8em;
+        justify-content: space-between;
+    }
+    .logo{
+        height: 8vh;
+        width: 15vw;
+    }
+    .nav-items{
+        font-size: 0.8em;
+        margin-right: auto;
+        justify-content: space-between;
+        padding-left: 1.5em;
+    }
+    .nav-items li{
+        padding: 0.5em 0;
+    }
+    .profile-button{
+        font-size: 0.7em;
+    }
+}
+@media (max-width:350px){
+    .nav{
+        padding: 0.1em 0;
+        font-size: 0.75em;
+    }
+    .logo{
+        height: 8vh;
+        width: 15vw;
+    }
+    .nav-items{
+        font-size: 0.75em;
+        justify-content: space-between;
+        margin-left: 0.5em;
+        padding-left: 1.5em;
+
+    }
+    .profile-button{
+        font-size: 0.5em;
+    }
+} 
+

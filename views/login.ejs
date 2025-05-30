@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="/css/login_signup.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Bolgs-Logo.png" alt="Website" class="logo">
+        <h2>Login</h2>
+        <%if(locals.error){%>
+            <p><%=error%></p>
+        <%}%>
+        <form action="/login" method="POST" id="login-form">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <span id="email_error"></span>
+            <input type="password" name="password" id="password" placeholder="password" required>
+            <button type="submit" id="login_btn">Login</button>
+        </form>
+        <p>Don't have account?<a href="/signup">Signup</a></p>
+    </div>
+</body>
+</html>
