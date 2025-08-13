@@ -51,7 +51,7 @@
         <p><%= blog.content.substring(0, 150) %>...</p>
 
         <div class="blog-actions">
-          <a href="/blog/<%= blog.id %>?returnTo" class="read-more">Read More</a>
+          <a href="/blog/<%= blog.id %>?returnTo=myPosts" class="read-more">Read More</a>
           <button
             class="like-btn <%= blog.userLiked ? 'active' : '' %>"
             data-blog-id="<%= blog.id %>"
