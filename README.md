@@ -1,4 +1,4 @@
-# 📝 Blogs Web Site
+# 📝 TechNest
 
 A full-stack blogging platform built with **Node.js**, **Express.js**, **PostgreSQL**, and **EJS** that allows users to create, manage, and interact with blog posts.  
 This project demonstrates **backend development, database integration, and responsive UI design**.
@@ -7,7 +7,7 @@ This project demonstrates **backend development, database integration, and respo
 
 ## 📖 About the Project
 
-The **Blogs Web Site** is designed for users to **sign up, log in, publish articles, like posts, and view trending blogs**.  
+The **TechNest** is designed for users to **sign up, log in, publish articles, like posts, and view trending blogs**.  
 It was built as a **portfolio project** to showcase full-stack development skills, following an **MVC architecture** for maintainability.
 
 ### ✨ Key Features
