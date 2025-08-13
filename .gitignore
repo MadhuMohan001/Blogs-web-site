@@ -27,3 +27,6 @@ coverage/
 # Temp files
 tmp/
 temp/
+
+#csv files 
+*.csv
