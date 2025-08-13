@@ -78,7 +78,7 @@ app.get("/blog/:id", async (req, res) => {
   const blogId = req.params.id;
   let returnTo = req.query.returnTo;
   if (returnTo === "home") {
-    returnTo = null;
+    returnTo = "";
   }
   try {
     const blog = await getBlogById(blogId);
@@ -95,8 +95,6 @@ app.get("/myposts", ensureLoggedIn, async (req, res) => {
     const blogs = await getUserBlogsWithLikes(userId,userId);
     const user = await getUserById(userId);
     const userName = user ? user.name : null;
-    console.log(blogs);
-
     res.render("myPosts", { blogs, userName });
   } catch (error) {
     console.error(error);
@@ -183,7 +181,6 @@ app.post("/login", async (req, res) => {
 
 app.post("/signup", async (req, res) => {
   const { username, email, password } = req.body;
-  console.log(req.body);
   try {
     const newUser = await createUser(username, email, password);
     req.session.userId = newUser.id;

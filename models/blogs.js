@@ -1,4 +1,3 @@
-import { log } from "console";
 import pool from "./db.js";
 
 export async function getAllBlogs() {
@@ -20,7 +19,6 @@ export async function getBlogById(id) {
         const response = await pool.query(`
             SELECT blogs.*, users.name AS author FROM blogs JOIN users ON blogs.user_id = users.id WHERE blogs.id = $1
             `, [id]);
-        console.log(response.rows[0]);
         return response.rows[0] || null;
     } catch (error) {
         console.log(error);
